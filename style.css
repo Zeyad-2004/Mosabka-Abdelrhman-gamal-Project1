@@ -586,6 +586,37 @@ nav{
     }
 }
 
+#second-break-line{
+    padding: 80px var(--global-padding);
+    background: linear-gradient(to left, #0f3d32cc 0%, #151515d8 80%), url(images/side-face-left.jpg);
+    background-position: left;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .image{
+            filter: grayscale(1);
+            transition: 0.8s ease-in-out;
+            
+            
+            img{
+
+                width: 100%;
+            }
+
+        }
+        .image:hover{
+            filter: grayscale(0);
+        }
+    }
+}
+
 footer{
         
     display: flex;
