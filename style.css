@@ -339,6 +339,7 @@ nav{
         }
     }
 }
+
 #about-us{
     max-height: 100vh;
     position: relative;
@@ -435,6 +436,51 @@ nav{
                         color: #bababa;
                         line-height: 30px;
                     }
+                }
+            }
+        }
+    }
+}
+
+#first-break-line{
+
+    padding: 80px var(--global-padding);
+    background: linear-gradient(to right, #0f3d32cc 0%, #151515d8 80%), url(images/side-view-right.jpg);
+    background-position: right;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .each{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+
+            img{
+                width: 80px;
+            }
+
+            p{
+                font-size: 22px;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                .special{
+
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: var(--secondary);
+                }
+                i{
+                    font-size: 22px;
                 }
             }
         }
