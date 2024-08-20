@@ -72,4 +72,164 @@ nav{
     }
 }
 
+#hero{
+    
+    height: 85vh;
+    max-width: 100vw;
+
+    background: linear-gradient(to left, rgba(92, 210, 185, 0.3) 0%, rgba(2, 1, 1) 60%), url(images/originall-view.png) ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-blend-mode: screen;
+    
+    padding: 100px var(--global-padding);
+
+    img{
+        display: none
+    }
+
+    .container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+
+        .head{
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .main{
+            max-width: 60%;
+
+            text-transform: uppercase;
+            font-size: 78px;
+            font-weight: 700;
+            position: relative;
+
+            margin-bottom: 10px;
+
+            .special{
+                color: var(--secondary);
+            }
+        }
+
+        .line{
+            height: 3px;
+            width: 100px;
+            margin-bottom: 20px;
+            background-color: var(--secondary);
+        }
+        .small{
+            max-width: 40%;
+            color: #aaaaaa;
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 30px;
+
+            margin-bottom: 50px;
+        }
+        .about-us{
+            display: flex;
+            align-items: start;
+            gap: 20px;
+
+            .play{
+
+                position: relative;
+                
+                width: 80px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background-color: var(--secondary);
+
+                .play-button{
+                    
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    font-size: 30px;
+                    position: relative;
+                    z-index: 1000;
+                }
+            }
+        }
+        .play::before, .play::after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 75px;
+            height: 75px;
+            background: var(--secondary);
+            border-radius: 50%;
+        }       
+        .play::before{
+            animation: pulse-border 1500ms ease-out infinite;
+        }        
+        .play::after {
+            animation: pulse-border-second 1500ms ease-out infinite;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            width: 11%;
+            .word1{
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 3px;
+
+                margin-bottom: 5px;
+            }
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: #6c6c6c;
+                margin-bottom: 10px;
+            }
+            .word2{
+                color: var(--secondary);
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+/* KeyFrames */
+/* ############### Hero Play Button */
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+    
+}
+
+@keyframes pulse-border-second {
+    35% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
 
