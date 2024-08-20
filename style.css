@@ -339,7 +339,107 @@ nav{
         }
     }
 }
+#about-us{
+    max-height: 100vh;
+    position: relative;
+    background-color: var(--dark-1);
+    padding: 70px var(--global-padding);
 
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    .main-image{
+        width: 40%;
+        height: 100%;
+        transform: translateY(60px);
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .head{
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--secondary);
+            text-transform: uppercase;
+            
+            margin-bottom: 20px;
+        }
+        .main{
+            width: 90%;
+            font-size: 60px;
+            font-weight: 750;
+            text-transform: capitalize;
+            line-height: 60px;
+
+            margin-bottom: 20px;
+
+            .special{
+                color: var(--secondary);
+            }
+        }
+        .line{
+            height: 4px;
+            width: 100px;
+            background-color: var(--secondary);
+
+            margin-bottom: 20px;
+        }
+        .small{
+            p{
+                
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 35px;
+                color: #adacac;
+                
+                margin-bottom: 30px;
+            }
+        }
+        .graph{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .each{
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 10px;
+                
+                img{
+                    width: 80px;
+                    aspect-ratio: 1;
+                }
+
+                .textt{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 30px;
+
+                    .main{
+                        font-size: 28px;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                        line-height: 0;
+                    }
+                    .second{
+                        width: 90%;
+                        font-size: 17px;
+                        color: #bababa;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 footer{
         
