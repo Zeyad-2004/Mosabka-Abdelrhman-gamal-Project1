@@ -847,6 +847,144 @@ nav{
     }
 }
 
+#our-blog{
+    padding: 100px var(--global-padding);
+    background-color: var(--primary);
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .head{
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+                p{
+                    font-size: 22px;
+                    font-weight: 500;
+                    letter-spacing: 3px;
+                    color: var(--secondary);
+                }
+
+            }
+            .main{
+                font-size: 62px;
+                font-weight: 700;
+                text-transform: capitalize;
+                
+                margin-bottom: 20px;
+                
+                
+                .special{
+                    color: var(--secondary);
+                }
+            }
+            .line{
+                height: 4px;
+                width: 120px;
+                background-color: var(--secondary);
+                
+                margin-bottom: 30px;
+            }
+            .small{
+                text-align: center;
+
+                p{
+                    
+                    padding: 0 12%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #aaa7a7;
+                    
+                    margin-bottom: 30px;
+                }
+            }   
+        }
+        .blogs{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .each{
+                
+                padding: 20px;
+                background-image: linear-gradient(180deg, #5CD2B93D 0%, #151515 100%);
+                
+                .all{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 20px;
+                    
+
+                    .image{
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .header{
+
+                        p{
+                            font-size: 28px;
+                            font-weight: 600;
+                            color: var(--secondary);
+                        }
+                    }
+                    .desc{
+
+                        p{
+                            color: #aaa7a7;
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                    .details{
+                        width: 100%;
+                        display: grid;
+                        justify-content: center;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 20px;
+
+                        .low{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 5px;
+                            
+                            i{
+                                font-size: 16px;
+                                color: #626262;
+                            }
+                            p{
+                                color: #aaa7a7;
+                            }
+                        }
+                        .role{
+                            
+                            p{
+                                font-size: 18px;
+                                color: var(--secondary);
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 #get-in-touch{
     padding: 100px var(--global-padding);
     background-color: #24242455;
