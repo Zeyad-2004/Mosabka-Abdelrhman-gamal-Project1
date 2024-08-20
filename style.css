@@ -206,6 +206,141 @@ nav{
     }
 }
 
+#services{
+    padding: 100px var(--global-padding);
+    height: 100vh;
+    background-color: var(--primary);
+    
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .text{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+            .head{
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                color: var(--secondary);
+                text-transform: uppercase;
+                
+                margin-bottom: 20px;
+            }
+            .main{
+                font-size: 65px;
+                font-weight: 700;
+                text-transform: capitalize;
+
+                margin-bottom: 10px;
+
+
+                .special{
+                    color: var(--secondary);
+                }
+            }
+            .line{
+                height: 4px;
+                width: 100px;
+                background-color: var(--secondary);
+
+                margin-bottom: 20px;
+            }
+            .small{
+                p{
+                    width: 85%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #9b9898;
+                    
+                    margin-bottom: 30px;
+                }
+            }
+            .button{
+                width: 150px;
+                height: 70px;
+                background-color: var(--secondary);
+                transition-duration: .3s;
+                
+                .value{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    font-size: 22px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            .button:hover{
+                border: 2px solid var(--secondary);
+                background-color: var(--primary);
+
+                .value{
+                    color: var(--secondary);
+                }
+            }
+        }
+        .graph{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 60%;
+
+            .col1{
+                margin-top: -30px;
+            }
+            .col{
+
+                
+                .second{
+
+                    background-image: linear-gradient(to top, rgba(92, 210, 185, 0.3) 0%, rgba(2, 1, 1) 100%);
+                }
+                .square{
+
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    padding: 35px 25px;
+                    margin-bottom: 20px;
+                    background-color: var(--dark-1);
+                    
+                    text-align: center;
+                    
+                    img{
+                        width: 30%;
+                        margin-bottom: 10px;
+                    }
+                    .head{
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        margin-bottom: 20px;
+                    }
+                    .desc{
+                        overflow: hidden;
+                        color: #969696;
+                        font-size: 18px;
+                        font-weight: 500; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 /* KeyFrames */
 /* ############### Hero Play Button */
