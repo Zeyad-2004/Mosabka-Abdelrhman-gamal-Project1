@@ -441,6 +441,105 @@ nav{
     }
 }
 
+#latest-project{
+    padding: 100px var(--global-padding);
+
+    .container{
+        display: grid;  
+        justify-content: baseline;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        column-gap: -2px;
+
+        .article{
+
+            grid-row: 1;
+            grid-column: 1 / 3;
+            
+            padding: 30px 40px 0px 20px;
+            
+            .head{
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: 3px;
+                color: var(--secondary);
+                text-transform: uppercase;
+
+                margin-bottom: 20px;
+            }
+            .main{
+                font-size: 65px;
+                font-weight: 700;
+                text-transform: capitalize;
+                
+                margin-bottom: 10px;
+                
+                
+                .special{
+                    color: var(--secondary);
+                }
+            }
+            .line{
+                height: 4px;
+                width: 120px;
+                background-color: var(--secondary);
+                
+                margin-bottom: 30px;
+            }
+            .small{
+                p{
+                    
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #aaa7a7;
+                    
+                    margin-bottom: 30px;
+                }
+            }        
+            .done{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .each{
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 20px;
+
+                    .correct-sign{
+
+                        i{
+                            font-size: 24px;
+                            color: var(--secondary)
+                        }
+                    }
+                    .words{
+                        p{
+                            font-size: 17px;
+                            font-weight: 500;
+                        }
+                    }
+                } 
+
+            }
+        }
+        .grid-item{
+            margin-bottom: -5px;
+            object-fit: cover;
+
+            img{
+    
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
 footer{
         
     display: flex;
