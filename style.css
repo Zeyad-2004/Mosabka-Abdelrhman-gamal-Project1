@@ -1256,27 +1256,38 @@ nav{
                     
 
                     .image{
-
+                        overflow: hidden;
+                        
                         img{
+                            transition: 0.5s;
                             width: 100%;
                         }
                     }
+                        
                     .header{
 
                         p{
+                            transition: 0.3s;
                             font-size: 28px;
                             font-weight: 600;
                             color: var(--secondary);
+                        }
+                    }
+                    .header:hover{
+                        p{
+                            color: var(--white);
                         }
                     }
                     .desc{
 
                         p{
                             color: #aaa7a7;
-                            font-size: 18px;
+                            font-size: 16px;
                             line-height: 30px;
+                            margin-bottom: 10px;
                         }
                     }
+
                     .details{
                         width: 100%;
                         display: grid;
@@ -1301,14 +1312,34 @@ nav{
                         .role{
                             
                             p{
+                                transition: 0.3s;
                                 font-size: 18px;
                                 color: var(--secondary);
+                            }
+                        }
+                        .role:hover{
+
+                            p{
+                                color: var(--white);
                             }
                         }
                     }
                 }
             }
+            
+            .each:hover{
 
+                .all{
+                    
+                    .image{
+                        
+                        img{
+                            
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
         }
     }
 }
