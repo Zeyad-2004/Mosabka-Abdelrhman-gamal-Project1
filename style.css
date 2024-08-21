@@ -722,6 +722,158 @@ nav{
     }
 }
 
+#team{
+    padding: 100px var(--global-padding);
+    background: linear-gradient(to right, #11111177 0%, #11111177 100% ), url(images/original-view-half-face.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;    
+    /* background-blend-mode: lighten; */
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .head{
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: 3px;
+                color: var(--secondary);
+                text-transform: uppercase;
+
+                margin-bottom: 20px;
+            }
+            .main{
+                font-size: 62px;
+                font-weight: 700;
+                text-transform: capitalize;
+                
+                margin-bottom: 20px;
+                
+                
+                .special{
+                    color: var(--secondary);
+                }
+            }
+            .line{
+                height: 4px;
+                width: 120px;
+                background-color: var(--secondary);
+                
+                margin-bottom: 30px;
+            }
+            .small{
+                text-align: center;
+
+                p{
+                    
+                    padding: 0 12%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #aaa7a7;
+                    
+                    margin-bottom: 40px;
+                }
+            }   
+        }
+
+        .peoples{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            width: 100%;
+
+            .each{
+                background-color: var(--light-dark);
+                width: 100%;
+
+                .box{
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 50px;
+                    padding: 20px;
+
+                    .data{
+
+                        .name{
+                            font-size: 30px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                        }
+                        .role{
+                            color: var(--secondary);
+                            font-weight: 500;
+                            font-size: 18px;
+                            margin-bottom: 25px;
+                        }
+                        .desc{
+                            font-size: 17px;
+                            font-weight: 500;
+                            line-height: 36px;
+                            color: #aaa7a7;
+                            margin-bottom: 30px;
+                        }
+
+                        .social-media{
+                            position: relative;
+                            padding: 0 10px;
+                            display: flex;
+                            gap: 30px;
+
+                            i{
+                                transition: 0.5s;
+                                font-size: 18px;
+                                color: var(--secondary)
+                            }
+                            i:hover{
+                                transform: scale(1.2);
+                                color: var(--white);
+                            }
+                        }
+                    }
+
+
+                    .image{
+                        background: radial-gradient(rgba(92, 210, 185, 0.85) 0%, var(--light-dark) 50%);
+
+
+                        img{
+                            filter: grayscale(1);
+                            object-fit: cover;
+                            height: 110%;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            
+                            transition: 0.5s ease-in-out;
+                        }
+                        img:hover{
+                            filter: grayscale(0);
+                        }
+                        /* position: absolute;
+
+                        background-image: url(images/T1.png);
+                        background-position: bottom;
+                        background-repeat: no-repeat;
+                        background-size: cover; */
+                    }
+                }
+            }
+        }
+    }
+}
+
 #portfolio{
     padding: 120px var(--global-padding);
 
