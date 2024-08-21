@@ -61,9 +61,14 @@ nav{
             .search-icon{
 
                 .search{
-
+                    transition: 0.3s;
                     font-size: 22px;
                     color: var(--secondary);
+                }
+            }
+            .search-icon:hover{
+                .search{
+                    color: white;
                 }
             }
         }
@@ -834,8 +839,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    background-attachment: fixed;    
-    /* background-blend-mode: lighten; */
+    background-attachment: fixed;
     
     .container{
         display: flex;
@@ -943,7 +947,8 @@ nav{
                                 color: var(--secondary)
                             }
                             i:hover{
-                                transform: scale(1.2);
+                                /* transform: scale(1.2); */
+                                transform: translateY(-5px) scale(1.2);
                                 color: var(--white);
                             }
                         }
@@ -967,12 +972,6 @@ nav{
                         img:hover{
                             filter: grayscale(0);
                         }
-                        /* position: absolute;
-
-                        background-image: url(images/T1.png);
-                        background-position: bottom;
-                        background-repeat: no-repeat;
-                        background-size: cover; */
                     }
                 }
             }
@@ -1043,7 +1042,6 @@ nav{
         .images{
             display: grid;
             gap: 20px;
-            /* grid-template-rows: 1fr 1fr 1fr; */
             grid-template-columns: 1fr 1fr 1fr;
 
             img{
@@ -1055,7 +1053,7 @@ nav{
 
 #testimonials{
     padding: 150px var(--global-padding);
-    /* background-color: #151515; */
+    
     background: linear-gradient(to left, #1515158d 0%, #15151595 50%), url(images/adadad.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -1110,7 +1108,7 @@ nav{
                 }
             }    
             .button{
-                /* width: 0%; */
+                
                 padding: 20px 20px;
                 height: 70px;
                 background-color: var(--secondary);
@@ -1614,9 +1612,10 @@ footer{
 }
 
 
-
-/* KeyFrames */
-/* ############### Hero Play Button */
+/* ############################# */
+/* ######  KeyFrames    ######## */
+/* ############################# */
+/* ----- Hero Play Button ------*/
 @keyframes pulse-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
